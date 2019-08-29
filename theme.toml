@@ -1,11 +1,15 @@
-name = "Detox"
+name = "Blueberry mini"
 license = "MIT"
 licenselink = "https://github.com/allnightgrocery/hugo-theme-blueberry-detox/blob/master/LICENSE"
-description = "Detox is a beautiful theme, originally designed by Jordan Bowman (@jrdnbwmn)."
-homepage = "https://github.com/allnightgrocery/hugo-theme-blueberry-detox"
+description = "Blueberry mini is a beautiful minimalistic theme, originally designed by Jordan Bowman (@jrdnbwmn)."
+homepage = "https://github.com/ajaimesv/hugo-theme-blueberry-mini"
 tags = ["blog", "minimal", "ghost", "white"]
 features = ["blog", "disqus", "google analytics", "pagination", "rss", "sharing options"]
-min_version = 0.14
+min_version = 1.0
+
+[author]
+  name = "Andres Jaimes"
+  homepage = "https://andres.jaimes.net"
 
 [author]
   name = "Andrew R. Jenkins"
