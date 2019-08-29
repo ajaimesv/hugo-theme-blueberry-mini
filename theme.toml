@@ -11,10 +11,6 @@ min_version = 1.0
   name = "Andres Jaimes"
   homepage = "https://andres.jaimes.net"
 
-[author]
-  name = "Andrew R. Jenkins"
-  homepage = "http://andrewrjenkins.com"
-
 # If porting an existing theme
 [original]
   name = "Jordan Bowman"
