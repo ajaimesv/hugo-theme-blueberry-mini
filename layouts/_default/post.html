@@ -38,7 +38,8 @@
                 </span>
             </section>
 
-            {{ with .Params.tags }}
+            {{ $taxonomy := "tags" }}
+            {{ with .Param $taxonomy }}
                 {{ range $index, $tag := . }}
                     <i class="fa fa-tag"></i>
                     {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
