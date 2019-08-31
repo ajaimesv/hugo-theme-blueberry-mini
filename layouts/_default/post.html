@@ -39,9 +39,12 @@
             </section>
 
             {{ with .Params.tags }}
-            	<span class="f-post-tags"><i class="fa fa-tag"></i>
-            	{{ delimit  . ", " }}
-            	</span>
+                {{ range $index, $tag := . }}
+                    <i class="fa fa-tag"></i>
+                    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
+                        <a href="{{ .Permalink }}">{{ $tag | urlize }}</a>
+                    {{- end -}}
+                {{- end -}}
             {{ end }}
         </section>
         {{ partial "disqus.html" . }}
